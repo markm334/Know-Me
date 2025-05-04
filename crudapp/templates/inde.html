@@ -1,0 +1,643 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Murangiri - Web Developer from Kenya</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="icon" href="{% static 'image/favicon.ico' %}" type="image/x-icon">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@600;700&family=Open+Sans:wght@400;500;700&family=Poppins:wght@400;600&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+     
+      <button class="nav-toggle-btn" aria-label="Toggle Menu" data-nav-toggle-btn>
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="close-icon"></ion-icon>
+      </button>
+
+      <nav class="navbar container">
+        <ul class="navbar-list">
+          <li>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="navbar-link" data-nav-link>Portfolio</a>
+          </li>
+          <li>
+            <a href="#skills" class="navbar-link" data-nav-link>Skills</a>
+          </li>
+          <li>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          <li>
+            <a href="#blog" class="navbar-link" data-nav-link>Blog</a>
+          </li>
+         
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero" id="home">
+        <div class="container">
+
+          <div class="hero-banner">
+
+            <img src="{% static 'assets/images/passport photo.jpg' %}" width="577" height="1280" loading="lazy" alt="Mark's Photo"
+                 class="img-cover">
+
+            <div class="elem elem-1">
+              <p class="elem-title">3+</p>
+
+              <p class="elem-text">Years of Success</p>
+            </div>
+
+            <div class="elem elem-2">
+              <p class="elem-title">20+</p>
+
+              <p class="elem-text">Projects Completed</p>
+            </div>
+
+            <div class="elem elem-3">
+              <ion-icon name="trophy"></ion-icon>
+            </div>
+              <img src="{% static 'assets/images/try.png' %}" width="766" height="775" alt="I'm Problem Solver from Kenya"
+                 class="rotate-img">
+
+          </div>
+
+          <div class="hero-content">
+
+            <h2 class="hero-title">
+              <span>Hello I'm</span>
+              <strong>Mark Murangiri</strong> Web  Developer/Innovator from Kenya
+            </h2>
+
+            <p class="hero-text">
+              Passionate web developer from Kenya, specializing in creating responsive and user-friendly websites and applications. Also deeply engaged in automation, robotics, and STEM innovation, bringing cutting-edge technology solutions to life.  </p>
+
+            <div class="btn-group">
+              <a href="#contact" class="btn btn-primary blue">Get a Quote</a>
+
+              <a href="#about" class="btn">About Me</a>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about">
+        <div class="container">
+
+          <figure class="about-banner">
+
+            <img src="{% static 'assets/images/S for future.jpg' %}" width="465" height="550" loading="lazy" alt="Ethan's Photo"
+                 class="img-cover">
+
+            <img src="{% static 'assets/images/WhatsApp Image 2024-10-17 at 20.47.00_3af70a02.jpg' %}" width="385" height="387" loading="lazy" alt="Ethan's Photo"
+                 class="abs-img">
+
+            <div class="abs-icon abs-icon-1">
+              <ion-icon name="logo-css3"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-2">
+              <ion-icon name="logo-javascript"></ion-icon>
+            </div>
+
+            <div class="abs-icon abs-icon-3">
+              <ion-icon name="logo-angular"></ion-icon>
+            </div>
+
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle">I'm a Developer/Innovator</p>
+
+            <h2 class="h2 section-title">I Develop Systems that Help People</h2>
+
+            <p class="section-text">
+              I am a passionate web developer and tech innovator with a strong foundation in building responsive, user-friendly websites. I specialize in creating dynamic, efficient solutions that solve real-world problems. I have experience working with modern web technologies and frameworks, alongside a background in automation, robotics, and STEM. </p>
+
+            <p class="section-text">
+              I am committed to SDGs, scalable code, and enjoy collaborating with teams to bring innovative ideas to life
+            </p>
+
+            <a href="#portfolio" class="btn btn-primary blue">View Portfolio</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+
+          <p class="section-subtitle">Portfolio</p>
+
+          <h2 class="h2 section-title">My Amazing Works</h2>
+
+          <p class="section-text">
+            In 2017, in a small room with a friend, I was soldering at a table surrounded by wires and electronic parts, explaining how even in what seems impossible, there are endless possibilities. This sparked my passion for embedded systems, where I began merging hardware and software to create impactful solutions. That experience shaped my current work as a web developer, focused on building efficient, responsive, and user-centric websites and applications.          </p>
+
+          <ul class="portfolio-list">
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('{% static "images/b.jpg" %}')">
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h3 card-title">Empowering Innovation Through Web and Embedded Systems</h3>
+
+                  <span class="btn-link">
+                   
+
+                   
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('{% static "assets/images/y.jpg" %}')">
+                <div class="card-content">
+
+                  
+
+                  <h3 class="h3 card-title">Greening The Community</h3>
+
+                  <span class="btn-link">
+                    
+
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('{% static "assets/images/12.jpg" %}')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">STEM EDUCATION</p>
+
+                  <h3 class="h3 card-title">Building the Future of STEM Education Through Tech Innovation</h3>
+
+                  <span class="btn-link">
+                   
+
+                    
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="portfolio-card" style="background-image: url('{% static "assets/images/portfolio-4.jpg" %}')">
+                <div class="card-content">
+
+                  <p class="card-subtitle">Details</p>
+
+                  <h3 class="h3 card-title">Web Application for Desiverse</h3>
+
+                  <span class="btn-link">
+                    <span>View Project</span>
+
+                    <ion-icon name="arrow-forward"></ion-icon>
+                  </span>
+
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SKILLS
+      -->
+
+      <section class="section skills" id="skills">
+        <div class="container">
+
+          <p class="section-subtitle">My Skills</p>
+
+          <h2 class="h2 section-title">I Develop Skills Regularly</h2>
+
+          <p class="section-text">
+            Lets transform this world with the latest technology.
+          </p>
+
+          <ul class="skills-list">
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 95%">
+                <h3 class=" skills-title">HTML & CSS</h3>
+
+                <data class="skills-data" value="87">87%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 87%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">C & C++</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">Python</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 90%">
+                <h3 class="skills-title">Arduino</h3>
+
+                <data class="skills-data" value="90">90%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 90%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 80%">
+                <h3 class="skills-title">PHP</h3>
+
+                <data class="skills-data" value="80">80%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 80%"></div>
+              </div>
+            </li>
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 75%">
+                <h3 class="skills-title">JavaScript</h3>
+
+                <data class="skills-data" value="75">75%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 75%"></div>
+              </div>
+            </li>
+
+
+
+
+
+
+            <li class="skills-item">
+              <div class="wrapper" style="width: 81%">
+                <h3 class="skills-title">STEM</h3>
+
+                <data class="skills-data" value="81">81%</data>
+              </div>
+
+              <div class="skills-progress-box">
+                <div class="skills-progress" style="width: 81%"></div>
+              </div>
+          </ul>
+
+
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CONTACT
+      -->
+
+      <section class="section contact" id="contact">
+        <div class="container">
+
+          <div class="contact-card">
+
+            <p class="card-subtitle">Don't be shy</p>
+
+            <h2 class="h2 section-title">Drop Me a Line</h2>
+
+            <div class="wrapper">
+
+              {% if message_sent %}
+                <p style="color: green; font-weight: bold;">{{ message_sent }}</p>
+              {% endif %}
+
+              <form action="{% url 'contact' %}" method="POST" class="contact-form">
+                {% csrf_token %}
+                <input type="text" name="name" placeholder="Name" required class="contact-input">
+
+                <input type="email" name="email" placeholder="Email" required class="contact-input">
+
+                <textarea name="message" placeholder="Message" required class="contact-input"></textarea>
+
+                <button type="submit" class="btn-submit">Submit Message</button>
+
+              </form>
+
+              <ul class="contact-list">
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="location"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Address</h3>
+
+                    <address class="contact-item-link">
+                      111, Meru, Kenya
+                    </address>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="mail"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Email</h3>
+
+                    <a href="mailto:markmurangiri885@gmail.com" class="contact-item-link">markmurangiri885@gmail.com</a>
+                  </div>
+
+                </li>
+
+                <li class="contact-item">
+
+                  <div class="contact-icon">
+                    <ion-icon name="call"></ion-icon>
+                  </div>
+
+                  <div>
+                    <h3 class="contact-item-title">Phone</h3>
+
+                    <a href="tel:+254794347868" class="contact-item-link">+254794347868</a>
+                  </div>
+
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #BLOG
+      -->
+
+
+ 
+      <section class="section blog" id="blog">
+        <style>
+          .card-banner {
+            width: 100%;
+            height: 250px; /* Adjust height as needed */
+            overflow: hidden;
+            border-radius: 10px;
+          }
+      
+          .card-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+          }
+        </style>
+      
+        <div class="container">
+      
+          <p class="section-subtitle">Latest News</p>
+      
+          <h2 class="h2 section-title">Checkout My Recent Blogs</h2>
+      
+          <p class="section-text">
+            This is little information about me, there is many about me you have to know.
+          </p>
+      
+          <ul class="blog-list">
+      
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="{% static 'images/g.jpeg' %}" loading="lazy"
+                      alt="Voluntarily Empowering Youth with STEM Skills" class="img-cover">
+                  </a>
+                </figure>
+      
+                <a href="#" class="card-tag">Mobility Solutions</a>
+
+                <h3 class="card-title">
+                  <a href="#">Our solution enhances accessibility for individuals with mobility constraints.</a>
+                </h3>
+                
+              </div>
+            </li>
+      
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="{% static 'images/m.jpg' %}" loading="lazy"
+                      alt="Voluntarily Empowering Youth with STEM Skills" class="img-cover">
+                  </a>
+                </figure>
+      
+                <a href="#" class="card-tag">STEM Training</a>
+      
+                <h3 class="card-title">
+                  <a href="#">Voluntarily Empowering Youth with STEM Skills</a>
+                </h3>
+              </div>
+            </li>
+      
+            <li>
+              <div class="blog-card">
+                <figure class="card-banner">
+                  <a href="#">
+                    <img src="{% static 'assets/images/A.jpg' %}" loading="lazy"
+                      alt="Using Technology to Drive Positive Environmental Impact" class="img-cover">
+                  </a>
+                </figure>
+      
+                <a href="#" class="card-tag">Environmental Tech</a>
+      
+                <h3 class="card-title">
+                  <a href="#">Using Technology to Drive Positive Environmental Impact</a>
+                </h3>
+              </div>
+            </li>
+      
+          </ul>
+      
+        </div>
+      </section>
+      
+
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container">
+
+      <p class="copyright">
+        &copy; 2024 <a href="#" class="copyright-link">codewithflexsync</a>. All Rights Reseverd
+      </p>
+
+      <ul class="footer-list">
+        <li>
+          <a href="#" class="footer-link">Terms & Condition</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Privacy Policy</a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-to-top" data-back-to-top>BACK TOP</a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="{% static 'assets/js/script.js' %}"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
